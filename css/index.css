@@ -540,43 +540,38 @@ button:hover:after {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 0;
+  margin:  1rem;
+  
+  column-count: 3;
+  /* Altere o número de colunas conforme necessário */
+  column-gap: 10px;
+  /* Espaçamento entre colunas */
+
 }
 
 @media (max-width: 999px) {
   .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-    margin-top: 3rem;
+      column-count: 2;
+
   }
 }
+@media (max-width: 600px) {
+  .container {
+      column-count: 1;
+
+  }
+}
+
+
 
 .square {
   position: relative;
-  width: calc(33.33% - 20px);
-  height: 300px;
-  margin-bottom: 40px;
   overflow: hidden;
   cursor: pointer;
-}
-
-@media (max-width: 999px) {
-  .square {
-    position: relative;
-    width: 40vh;
-    height: 60vh;
-    margin-bottom: 40px;
-    overflow: hidden;
-    cursor: pointer;
-  }
+  break-inside: avoid;
+  /* Evita que as imagens sejam divididas entre as colunas */
+  margin-bottom: 10px;
+  /* Espaçamento entre as imagens */
 }
 
 .square:nth-child(3n+1) {
@@ -591,8 +586,6 @@ button:hover:after {
 
 .square img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: filter 0.5s ease;
 }
 
