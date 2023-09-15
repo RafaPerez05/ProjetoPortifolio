@@ -634,7 +634,7 @@ button:hover:after {
 
 .square button {
   font-family: poppins;
-  background-color: #522A42;
+  background-color: rgb(62, 72, 65);
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -643,7 +643,7 @@ button:hover:after {
   overflow: hidden;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
-  border-color: #522A42;
+  border-color: rgb(62, 72, 65);
   position: relative;
   z-index: 1;
   opacity: 0.9;
