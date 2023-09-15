@@ -685,5 +685,61 @@ footer {
   padding: 10px;
   cursor: pointer;
   font-family: poppins;
-
 }
+
+footer .title-contato {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .title-contato h2 {
+  margin: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+footer .myInfo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer .fale-comigo {
+  margin-left: 2rem;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+footer .redes {
+  width: auto;
+  margin-right: 2rem;
+  flex-direction: column;
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 558px) {
+  footer .myInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .redes {
+    margin: 0;
+    text-align: center;
+  }
+  footer .title-contato{
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .title-contato #Minhas{
+    display: none;
+  }
+
+  footer .fale-comigo p,
+  footer .redes p {
+    margin: 0.5rem 0;
+  }
+}
+
