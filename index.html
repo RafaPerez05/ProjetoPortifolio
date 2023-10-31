@@ -247,13 +247,14 @@
       <section class="formCTT">
           <form action="https://api.staticforms.xyz/submit" method="post">
               <label>Nome:</label>
-              <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+              <input id="formName" type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
               <label>Email:</label>
-              <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+              <input id="formEmail" type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
               <label>Mensagem:</label>
-              <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-              <button type="submit">Enviar</button>
+              <textarea id="formMensage" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
               <input type="hidden" name="accessKey" value="fd14e355-806e-49b7-a88e-9439255e1fe0">
+              <input type="hidden" name="redirectTo" value="https://rafaelperez.online/">
+              <button id="enviaEmail"type="submit">Enviar</button>
           </form>
           <div class="social-buttons">
               <a class="social-button instagram" href="https://www.instagram.com/rafaa_per3z/" target="_blank"><i

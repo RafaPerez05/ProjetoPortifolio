@@ -127,3 +127,16 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+function redirecionaEmail(){
+  window.alert("Enviado com sucesso!");
+  document.getElementById("formName").textContent = "";
+  document.getElementById("formEmail").textContent= "";
+  document.getElementById("formMensage").textContent = "";
+
+};
+
+document.getElementById("enviaEmail").addEventListener("click", function () {
+  redirecionaEmail();
+});
+
