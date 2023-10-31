@@ -522,7 +522,7 @@ button:hover:after {
 
 .drinks h1 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: normal;
   font-family: poppins;
   margin-top: 3rem;
   color: rgba(62, 72, 65, 0.9);

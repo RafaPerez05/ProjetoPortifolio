@@ -25,11 +25,13 @@
 
 .hardSkills .top h1 {
     margin: 0;
+    font-weight: normal;
     font-size: 3rem;
 }
 
 .hardSkills .top p {
     font-size: 1.2rem;
+    font-weight: normal;
 }
 
 .hardSkills .bot {

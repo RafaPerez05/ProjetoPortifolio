@@ -3,7 +3,9 @@ footer {
     color: #f1f1f1;
     text-align: center;
     padding: 10px;
+    margin-top: 6rem;
     font-family: poppins;
+    font-weight: normal;
   }
   footer img{
     width: auto;
