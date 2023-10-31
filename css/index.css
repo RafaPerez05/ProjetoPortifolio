@@ -22,6 +22,7 @@
 body {
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: rgb(248, 248, 248);
 
 }
 
@@ -202,7 +203,7 @@ nav a {
 .nav-list {
   list-style: none;
   display: flex;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .nav-list li {
@@ -230,6 +231,7 @@ nav a {
   }
 
   .nav-list {
+    margin: 0;
     position: absolute;
     top: 8vh;
     right: 0;
@@ -366,7 +368,7 @@ main {
 
 @media (min-width: 999px) {
   .slideshow {
-    height: 80vh;
+    height: 95vh;
     width: 100%;
 
   }
@@ -374,7 +376,6 @@ main {
 
 section .corpo {
   position: relative;
-  background-color: bisque;
   height: auto;
   width: 100%;
 }
@@ -383,9 +384,9 @@ section .corpo {
   display: flex;
   width: 100%;
   height: auto;
-  background-color: rgba(62, 72, 65, 0.9);
-  color: white;
+  color: rgb(62, 72, 65);;
   font-family: poppins;
+  padding: 20px;
 }
 
 .sobre .desenho{
@@ -406,11 +407,11 @@ section .corpo {
   text-align: justify;
   justify-content: center;
   margin: 1.5rem;
+  margin-top: 0;
 }
 
 @media (max-width: 999px) {
   .title {
-    margin: 1.5em;
     margin-top: 0;
   }
   title h2{
@@ -428,13 +429,12 @@ section .corpo {
 }
 
 .title h2 {
-  font-size: 2rem;
   font-weight: bold;
 }
 
 @media (min-width: 999px) {
   .title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .sobre{
@@ -457,7 +457,7 @@ section .corpo {
 }
 
 .title p {
-  margin: 0;
+  margin: 0.5rem;
   font-size: 1rem;
   font-family: poppins;
   text-align: justify;
@@ -467,7 +467,7 @@ section .corpo {
 
 @media (min-width: 999px) {
   .title p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -521,16 +521,16 @@ button:hover:after {
 }
 
 .drinks h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  font-family: poppins-bold;
+  font-family: poppins;
   margin-top: 3rem;
   color: rgba(62, 72, 65, 0.9);
 }
 
 @media (min-width: 999px) {
   .drinks h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
@@ -543,8 +543,13 @@ button:hover:after {
 
 .container {
   font-family: poppins;
-  margin:  1rem;
+  margin:  5rem;
+  margin-top: 2rem;
+  border: solid rgba(62, 72, 65, 0.2);
+  padding: 20px;
+  border-radius: 20px;
   
+
   column-count: 3;
   /* Altere o número de colunas conforme necessário */
   column-gap: 10px;
@@ -564,9 +569,6 @@ button:hover:after {
 
   }
 }
-
-
-
 .square {
   position: relative;
   overflow: hidden;
@@ -677,69 +679,4 @@ button:hover:after {
   width: 110%;
 }
 
-
-footer {
-  background-color: rgba(62, 72, 65, 0.9);
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  cursor: pointer;
-  font-family: poppins;
-}
-
-footer .title-contato {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer .title-contato h2 {
-  margin: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
-
-footer .myInfo {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-footer .fale-comigo {
-  margin-left: 2rem;
-  flex-direction: column;
-  font-size: 1.5rem;
-}
-
-footer .redes {
-  width: auto;
-  margin-right: 2rem;
-  flex-direction: column;
-  text-align: end;
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 558px) {
-  footer .myInfo {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .redes {
-    margin: 0;
-    text-align: center;
-  }
-  footer .title-contato{
-    justify-content: center;
-    flex-direction: column;
-  }
-  footer .title-contato #Minhas{
-    display: none;
-  }
-
-  footer .fale-comigo p,
-  footer .redes p {
-    margin: 0.5rem 0;
-  }
-}
 
