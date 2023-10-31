@@ -94,14 +94,14 @@ function mostrarItens(categoria) {
 //JS PARA ROLAR
 document.addEventListener("DOMContentLoaded", function () {
   // Selecione o link "Contato" pelo texto do link
-  const linkContato = document.querySelector('a[href="#footer"]');
+  const linkContato = document.querySelector('a[href="#contato"]');
 
   // Adicione um ouvinte de evento de clique ao link
   linkContato.addEventListener("click", function (event) {
       event.preventDefault(); // Evite o comportamento padrão de seguir o link
 
       // Selecione o footer pelo ID
-      const footer = document.getElementById("footer");
+      const footer = document.getElementById("FormContato");
 
       // Role suavemente até o footer
       footer.scrollIntoView({
